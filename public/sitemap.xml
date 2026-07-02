@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Home pages -->
+  <url>
+    <loc>https://tungcoin.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tungcoin.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tungcoin.com/es/" />
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tungcoin.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://tungcoin.com/es/" />
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- How to Buy -->
+  <url>
+    <loc>https://tungcoin.com/how-to-buy/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Whitepaper -->
+  <url>
+    <loc>https://tungcoin.com/whitepaper/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/whitepaper/es/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog listing -->
+  <url>
+    <loc>https://tungcoin.com/blog/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/es/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog posts EN -->
+  <url>
+    <loc>https://tungcoin.com/blog/how-to-buy-meme-coins-on-bsc.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/passive-income-crypto-2026.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/meme-coin-tokenomics-explained.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog posts ES -->
+  <url>
+    <loc>https://tungcoin.com/blog/es/como-comprar-meme-coins-en-bsc.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/es/ingresos-pasivos-crypto-2026.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/es/tokenomics-meme-coins-explicadas.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- SHIB/PEPE/DOGE comparison blog posts -->
+  <url>
+    <loc>https://tungcoin.com/blog/shib-vs-pepe-vs-doge-vs-tung-meme-coin-comparison.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/lessons-from-shib-doge-floki-next-100x-meme-coin.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/meme-coin-market-analysis-2026-why-tung-is-different.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/tung-strategy-game-blockchain-p2e.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Spanish versions -->
+  <url>
+    <loc>https://tungcoin.com/blog/es/shib-vs-pepe-vs-doge-vs-tung-comparativa-meme-coins.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/es/lecciones-shib-doge-floki-proxima-100x-meme-coin.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/es/analisis-mercado-meme-coins-2026-por-que-tung-es-diferente.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tungcoin.com/blog/es/tung-juego-estrategia-blockchain-p2e.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

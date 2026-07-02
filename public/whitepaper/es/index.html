@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TUNG Whitepaper — La Memecoin del Sahur de Falco-X</title>
+  <meta name="description" content="Whitepaper oficial de TUNG. Una meme coin deflacionaria en BNB Chain con ingresos pasivos, auto-quema, y el movimiento cultural Tung Tung Sahur. Construida en Falco-X." />
+  <meta name="keywords" content="TUNG whitepaper, token TUNG, whitepaper meme coin, meme coin BNB Chain, ingreso pasivo crypto, token deflacionario, Tung Tung Sahur, Falco-X" />
+  <link rel="canonical" href="https://tungcoin.com/whitepaper/es/" />
+  <link rel="alternate" hreflang="en" href="https://tungcoin.com/whitepaper/" />
+  <link rel="alternate" hreflang="es" href="https://tungcoin.com/whitepaper/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://tungcoin.com/whitepaper/" />
+
+  <meta property="og:title" content="TUNG Whitepaper — La Memecoin del Sahur de Falco-X" />
+  <meta property="og:description" content="Whitepaper oficial de TUNG. Ingresos pasivos, auto-quema, tokenomics deflacionarias. Construida en BNB Chain y Falco-X." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tungcoin.com/whitepaper/es/" />
+  <meta property="og:image" content="https://photos.pinksale.finance/file/pinksale-logo-upload/1779894309304-a76860620da420652c14230ae807e126.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TUNG Whitepaper — Oficial" />
+  <meta name="twitter:description" content="Lee el whitepaper de TUNG. Meme coin deflacionaria con recompensas pasivas en BNB Chain. 6% tax → 3% tax en el roadmap. Construida en Falco-X." />
+  <meta name="twitter:image" content="https://photos.pinksale.finance/file/pinksale-logo-upload/1779894309304-a76860620da420652c14230ae807e126.png" />
+
+  <style>
+    :root {
+      --green: #9EFF00;
+      --gold: #F5C542;
+      --red: #FF4D4D;
+      --bg: #050505;
+      --card: #0a0a0a;
+      --border: rgba(158, 255, 0, 0.1);
+      --text: #d4d4d4;
+      --text-muted: #888;
+      --text-heading: #fff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(5, 5, 5, 0.92);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    .topbar-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .topbar-logo {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+    }
+    .topbar-logo img { width: 40px; height: 40px; object-fit: contain; }
+    .topbar-logo span {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800; font-size: 1.4rem;
+      background: linear-gradient(135deg, var(--green), var(--gold));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .topbar-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+    .topbar-links a {
+      color: var(--text-muted); text-decoration: none;
+      font-size: 0.875rem; font-weight: 600;
+      transition: color 0.2s;
+    }
+    .topbar-links a:hover { color: var(--green); }
+    .lang-badge {
+      font-size: 0.75rem; font-weight: 700; padding: 4px 10px;
+      border-radius: 20px; border: 1px solid rgba(158,255,0,0.3);
+      color: var(--green); text-decoration: none;
+    }
+    .lang-badge:hover { background: rgba(158,255,0,0.08); }
+
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+    .cover {
+      text-align: center; padding: 80px 0 60px;
+      border-bottom: 1px solid var(--border); margin-bottom: 60px;
+    }
+    .cover img { width: 120px; height: 120px; object-fit: contain; margin-bottom: 24px; }
+    .cover h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900;
+      color: var(--text-heading); letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .cover h1 em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--green), var(--gold));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .cover .subtitle {
+      font-size: 1.1rem; color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .cover .badge-row {
+      display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;
+    }
+    .cover .badge {
+      padding: 6px 16px; border-radius: 20px;
+      font-size: 0.8rem; font-weight: 700;
+      border: 1px solid var(--border);
+      color: var(--green);
+      background: rgba(158,255,0,0.04);
+    }
+    .cover .version {
+      margin-top: 20px; font-size: 0.8rem; color: #555;
+    }
+
+    section { margin-bottom: 56px; }
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.6rem; font-weight: 800;
+      color: var(--text-heading); margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+      display: flex; align-items: center; gap: 12px;
+    }
+    h2 .num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px; border-radius: 8px;
+      background: rgba(158,255,0,0.12); color: var(--green);
+      font-size: 0.9rem; font-weight: 800;
+      flex-shrink: 0;
+    }
+    h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem; font-weight: 700;
+      color: var(--text-heading); margin: 24px 0 10px;
+    }
+    p { margin-bottom: 16px; color: var(--text); }
+    strong { color: var(--text-heading); }
+
+    .info-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 28px 24px; margin: 20px 0;
+    }
+    .info-card.green { border-left: 4px solid var(--green); }
+    .info-card.gold  { border-left: 4px solid var(--gold); }
+    .info-card.red   { border-left: 4px solid var(--red); }
+    .info-card h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem; font-weight: 700; color: var(--text-heading);
+      margin-bottom: 8px;
+    }
+    .info-card p { margin-bottom: 0; color: var(--text-muted); font-size: 0.95rem; }
+
+    .tkm-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px; margin: 20px 0;
+    }
+    .tkm-item {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 20px; text-align: center;
+    }
+    .tkm-pct {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem; font-weight: 900;
+    }
+    .tkm-label {
+      font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;
+    }
+
+    .tax-table {
+      width: 100%; border-collapse: collapse; margin: 20px 0;
+      font-size: 0.95rem;
+    }
+    .tax-table th {
+      text-align: left; padding: 14px 16px;
+      background: rgba(158,255,0,0.05); color: var(--green);
+      font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+      border-bottom: 2px solid var(--border);
+    }
+    .tax-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    .tax-table tr:last-child td { border-bottom: none; }
+    .tax-table .highlight-cell { color: var(--gold); font-weight: 700; }
+
+    .rm-timeline { position: relative; padding-left: 32px; margin: 24px 0; }
+    .rm-timeline::before {
+      content: ''; position: absolute; left: 11px; top: 0; bottom: 0;
+      width: 2px; background: var(--border);
+    }
+    .rm-phase { position: relative; margin-bottom: 28px; }
+    .rm-phase::before {
+      content: ''; position: absolute;
+      left: -25px; top: 6px;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 12px rgba(158,255,0,0.4);
+    }
+    .rm-phase h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem; font-weight: 700; color: var(--text-heading);
+      margin-bottom: 4px;
+    }
+    .rm-phase .rm-status {
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 1px; margin-bottom: 6px;
+    }
+    .rm-status.live { color: var(--green); }
+    .rm-status.soon { color: var(--gold); }
+    .rm-phase p { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
+
+    footer {
+      text-align: center; padding: 50px 0 40px;
+      border-top: 1px solid var(--border); margin-top: 60px;
+      color: #555; font-size: 0.82rem;
+    }
+    footer a { color: var(--green); text-decoration: none; }
+    footer a:hover { color: var(--gold); }
+
+    @media (max-width: 640px) {
+      .cover { padding: 50px 0 40px; }
+      h2 { font-size: 1.35rem; }
+      .tkm-grid { grid-template-columns: 1fr 1fr; }
+      .topbar-inner { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a href="/" class="topbar-logo">
+      <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1779894309304-a76860620da420652c14230ae807e126.png" alt="TUNG" />
+      <span>TUNG</span>
+    </a>
+    <div class="topbar-links">
+      <a href="/">Inicio</a>
+      <a href="/blog/es/">Blog</a>
+      <a href="/whitepaper/" class="lang-badge">EN</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <header class="cover">
+    <img src="https://photos.pinksale.finance/file/pinksale-logo-upload/1779894309304-a76860620da420652c14230ae807e126.png" alt="TUNG Logo" />
+    <h1><em>TUNG</em> Whitepaper</h1>
+    <p class="subtitle">La Memecoin del Sahur de Falco-X — Construida en BNB Chain</p>
+    <div class="badge-row">
+      <span class="badge">BNB Chain (BSC)</span>
+      <span class="badge">Ecosistema Falco-X</span>
+      <span class="badge">Deflacionaria</span>
+      <span class="badge">Ingreso Pasivo</span>
+    </div>
+    <p class="version">Versión 1.0 — Mayo 2026</p>
+  </header>
+
+  <section id="abstract">
+    <h2><span class="num">1</span> Resumen</h2>
+    <p>
+      <strong>TUNG</strong> es una meme coin impulsada por la comunidad, lanzada en <strong>BNB Smart Chain (BSC)</strong>,
+      nacida de la cultura viral de internet <strong>Tung Tung Sahur</strong>. A diferencia de las meme coins
+      tradicionales que dependen únicamente del hype, TUNG introduce un <strong>modelo económico autosostenible</strong>
+      que recompensa a los holders, quema suministro y construye valor a largo plazo a través del
+      <strong>ecosistema Falco-X</strong>.
+    </p>
+    <p>
+      TUNG no es solo un token — es un <strong>movimiento cultural</strong> fusionado con tokenomics deflacionarias.
+      Cada transacción alimenta tres mecanismos centrales: <strong>ingreso pasivo para holders</strong>,
+      <strong>quema automática de tokens</strong> y <strong>refuerzo de liquidez</strong>.
+      El resultado es una meme coin que trabaja para su comunidad 24/7.
+    </p>
+    <div class="info-card green">
+      <h4>🌙 La Filosofía Sahur</h4>
+      <p>
+        "La comunidad nunca duerme. Tus recompensas tampoco." — Así como el Sahur sostiene durante la noche,
+        TUNG sostiene a sus holders en cada ciclo de mercado. Despierta. Compra TUNG. Gana para siempre.
+      </p>
+    </div>
+  </section>
+
+  <section id="culture">
+    <h2><span class="num">2</span> El Movimiento Tung Tung Sahur</h2>
+    <p>
+      <strong>Tung Tung Sahur</strong> es un fenómeno viral genuino que arrasó en redes sociales —
+      Telegram, X (Twitter) y TikTok. Arraigado en la tradición del <strong>Sahur</strong> (la comida
+      antes del amanecer), la frase se convirtió en un grito de guerra uniendo a degens crypto y
+      entusiastas de la cultura de internet en todo el mundo.
+    </p>
+    <p>
+      Las meme coins más exitosas de la historia — Dogecoin, PEPE, Shiba Inu — comparten un hilo común:
+      <strong>raíces culturales auténticas</strong>. La cultura de TUNG no es fabricada. Es orgánica,
+      enérgica y global. La comunidad corea <strong>"DESPIERTA. COMPRA TUNG."</strong> — un homenaje
+      directo a despertarse para el Sahur, transformado en un llamado a la acción crypto.
+    </p>
+    <p>
+      El audio viral <strong>"Tralalero Tralalá"</strong> se ha convertido en el himno no oficial de la
+      comunidad TUNG, extendiéndose por todas las plataformas y trayendo nuevos holders al ecosistema
+      diariamente. El emoji 🌙 — central en la identidad de TUNG — simboliza tanto la tradición del
+      Sahur como la aspiración crypto universal: <strong>a la luna</strong>.
+    </p>
+  </section>
+
+  <section id="tokenomics">
+    <h2><span class="num">3</span> Tokenomics</h2>
+    <p>
+      El suministro total de TUNG está estratégicamente asignado para garantizar
+      <strong>sostenibilidad a largo plazo</strong>, <strong>crecimiento comunitario</strong> y
+      <strong>salud del ecosistema</strong>. Cada asignación tiene un propósito — nada se desperdicia,
+      nada se oculta.
+    </p>
+    <div class="tkm-grid">
+      <div class="tkm-item">
+        <div class="tkm-pct" style="color: var(--green);">48%</div>
+        <div class="tkm-label">Pool de Liquidez (Bloqueado)</div>
+      </div>
+      <div class="tkm-item">
+        <div class="tkm-pct" style="color: var(--gold);">9.52%</div>
+        <div class="tkm-label">Staking Rewards</div>
+      </div>
+      <div class="tkm-item">
+        <div class="tkm-pct" style="color: var(--red);">9.52%</div>
+        <div class="tkm-label">Quema de Tokens</div>
+      </div>
+      <div class="tkm-item">
+        <div class="tkm-pct" style="color: #F7D96A;">9.52%</div>
+        <div class="tkm-label">Marketing</div>
+      </div>
+      <div class="tkm-item">
+        <div class="tkm-pct" style="color: #7ACC00;">9.52%</div>
+        <div class="tkm-label">Desarrollo</div>
+      </div>
+      <div class="tkm-item">
+        <div class="tkm-pct" style="color: #4DC9F6;">4%</div>
+        <div class="tkm-label">Team (Vesting)</div>
+      </div>
+    </div>
+    <div class="info-card green">
+      <h4>🔒 Transparencia Total</h4>
+      <p>
+        El 100% del suministro de TUNG está distribuido con total transparencia on-chain. El
+        <strong>48% del pool de liquidez está bloqueado</strong>. 4% del team bloqueado con vesting.
+        0.95% de quema inicial más quema deflacionaria continua. Tokens de Dev y Marketing bloqueados
+        en PinkSale y verificables.
+        Contrato: <code style="word-break:break-all;color:var(--green);">0x09514EcF8270C12101D077B5e8B034B164F71C5f</code>
+      </p>
+    </div>
+  </section>
+
+  <section id="tax">
+    <h2><span class="num">4</span> Estructura de Comisiones y Reducción Futura</h2>
+    <p>
+      TUNG implementa una <strong>comisión por transacción</strong> en cada compra y venta. Esta
+      comisión es el motor que impulsa toda la economía TUNG — financiando recompensas para holders,
+      liquidez y quemas.
+    </p>
+
+    <h3>Fase 1 — Comisión de Lanzamiento: <span style="color:var(--green);">6%</span></h3>
+    <table class="tax-table">
+      <thead>
+        <tr><th>Asignación</th><th>Porcentaje</th><th>Propósito</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Dividendos para Holders</td><td class="highlight-cell">3%</td><td>Distribuido proporcionalmente a todos los holders de TUNG</td></tr>
+        <tr><td>Marketing y Desarrollo</td><td class="highlight-cell">3%</td><td>Impulsa campañas de crecimiento, expansión del ecosistema y liquidez</td></tr>
+      </tbody>
+    </table>
+
+    <div class="info-card gold">
+      <h4>📉 Reducción de Comisión Planificada: 6% → 3%</h4>
+      <p>
+        A medida que TUNG alcance hitos clave — listados en exchanges, objetivos de holders y madurez
+        del ecosistema — la comisión por transacción se <strong>reducirá del 6% al 3%</strong>.
+        Esta reducción se ejecutará de forma transparente y se anunciará con anticipación. Una
+        comisión más baja significa mayor velocidad de trading, atrayendo nuevos inversores mientras
+        se mantiene el mecanismo central de dividendos.
+      </p>
+    </div>
+
+    <h3>Fase 2 — Comisión de Madurez: <span style="color:var(--gold);">3%</span></h3>
+    <table class="tax-table">
+      <thead>
+        <tr><th>Asignación</th><th>Porcentaje</th><th>Propósito</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Dividendos para Holders</td><td class="highlight-cell">1.5%</td><td>Ingreso pasivo continuo para la comunidad</td></tr>
+        <tr><td>Marketing y Desarrollo</td><td class="highlight-cell">1.5%</td><td>Crecimiento continuo del ecosistema y liquidez</td></tr>
+      </tbody>
+    </table>
+    <p>
+      La reducción de comisiones es un <strong>compromiso creíble</strong> con la comunidad: los
+      holders tempranos se benefician de mayores reflexiones durante la fase de crecimiento, mientras
+      que la comisión reducida en la fase de madurez atrae volumen de trading mainstream —
+      beneficiando a todos.
+    </p>
+  </section>
+
+  <section id="reflections">
+    <h2><span class="num">5</span> Ingreso Pasivo — El Mecanismo de Reflexión</h2>
+    <p>
+      TUNG utiliza un <strong>mecanismo de reflexión (rebase)</strong> — no staking tradicional. Esto significa:
+    </p>
+    <ul style="margin: 0 0 16px 20px; color: var(--text);">
+      <li style="margin-bottom: 8px;"><strong>Sin bloqueos.</strong> Tus tokens permanecen en tu billetera. Puedes vender cuando quieras.</li>
+      <li style="margin-bottom: 8px;"><strong>Sin mínimo.</strong> Ten $10 o $10,000 — ganas proporcionalmente.</li>
+      <li style="margin-bottom: 8px;"><strong>Sin acción requerida.</strong> Las recompensas llegan automáticamente con cada transacción en la red.</li>
+      <li style="margin-bottom: 8px;"><strong>Efecto compuesto.</strong> A medida que crece el volumen de trading, también lo hacen tus recompensas.</li>
+    </ul>
+    <div class="info-card green">
+      <h4>💰 Ejemplo Real</h4>
+      <p>
+        Si tienes <strong>1% del suministro de TUNG</strong> y alguien hace un <strong>trade de $10,000</strong>,
+        la comisión de dividendos del 3% genera <strong>$300</strong> en recompensas. De eso,
+        <strong>$3 van directamente a tu billetera</strong> — instantáneamente. Sin staking.
+        Sin reclamar. Sin comisiones de gas para cobrar. Simplemente aparece.
+      </p>
+    </div>
+  </section>
+
+  <section id="burn">
+    <h2><span class="num">6</span> Auto-Quema — Deflacionaria por Diseño</h2>
+    <p>
+      TUNG es un <strong>token deflacionario</strong>. En cada transacción — compra o venta —
+      una porción de la comisión se envía directamente a la <strong>dead wallet</strong>
+      (<code style="color:var(--red);font-size:0.85rem;">0x0000...dead</code>), eliminando
+      permanentemente esos tokens de circulación. Nunca pueden ser recuperados, vendidos o transferidos.
+    </p>
+    <p>
+      TUNG se lanzó con <strong>2,000,000 de tokens pre-quemados</strong>, señalando el compromiso
+      del proyecto con un modelo deflacionario desde el primer día. Con cada trade, el suministro
+      circulante se reduce. Economía básica: <strong>menos oferta + demanda creciente = presión
+      alcista en el precio</strong>.
+    </p>
+    <div class="info-card red">
+      <h4>🔥 Transparencia de Quema Verificable</h4>
+      <p>
+        Todos los tokens quemados son visibles on-chain. Verifica el balance de la dead wallet cuando quieras en:<br />
+        <a href="https://bscscan.com/token/0x09514EcF8270C12101D077B5e8B034B164F71C5f?a=0x000000000000000000000000000000000000dead#transactions"
+           target="_blank" rel="noopener"
+           style="color:var(--red);font-weight:700;word-break:break-all;">
+          BSCScan — TUNG Dead Wallet →
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section id="falcox">
+    <h2><span class="num">7</span> El Ecosistema Falco-X</h2>
+    <p>
+      TUNG no es un token independiente lanzado de forma aislada. Está <strong>construido dentro del
+      ecosistema Falco-X</strong> — una red creciente de herramientas de finanzas descentralizadas,
+      infraestructura de swap y proyectos impulsados por la comunidad en BNB Chain.
+    </p>
+    <p>
+      El respaldo de Falco-X proporciona a TUNG:
+    </p>
+    <ul style="margin: 0 0 16px 20px; color: var(--text);">
+      <li style="margin-bottom: 8px;"><strong>Infraestructura de swap</strong> — TUNG se comercia en Falco-X Swap con liquidez profunda.</li>
+      <li style="margin-bottom: 8px;"><strong>Sinergias del ecosistema</strong> — Polinización cruzada con otros proyectos Falco-X.</li>
+      <li style="margin-bottom: 8px;"><strong>Dividendos para accionistas</strong> — Los beneficios del ecosistema Falco-X fluyen a los stakeholders del token.</li>
+      <li style="margin-bottom: 8px;"><strong>Sostenibilidad a largo plazo</strong> — Más allá de los memes, TUNG tiene infraestructura y utilidad real.</li>
+    </ul>
+    <div class="info-card green">
+      <h4>🛠️ Construido para Durar</h4>
+      <p>
+        La mayoría de las meme coins se desvanecen porque no tienen fundamento. La integración de TUNG
+        con Falco-X asegura que tenga la infraestructura, herramientas de liquidez y soporte del
+        ecosistema para sobrevivir — y prosperar — más allá del ciclo de hype inicial.
+      </p>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <h2><span class="num">8</span> Roadmap</h2>
+    <div class="rm-timeline">
+      <div class="rm-phase">
+        <div class="rm-status live">● Fase 1 — En vivo</div>
+        <h4>Lanzamiento y Formación de Comunidad</h4>
+        <p>Lanzamiento del token en Falco-X. Construcción de comunidad en Telegram, X y Discord. Propagación inicial del meme. 2,000,000 de tokens pre-quemados.</p>
+      </div>
+      <div class="rm-phase">
+        <div class="rm-status live">● Fase 2 — En vivo</div>
+        <h4>Crecimiento de Comunidad</h4>
+        <p>Construyendo el ejército TUNG. Expansión en redes sociales. Primeros hitos de holders alcanzados.</p>
+      </div>
+      <div class="rm-phase">
+        <div class="rm-status soon">○ Fase 3 — Próximamente</div>
+        <h4>Campañas Virales y Asociaciones con Influencers</h4>
+        <p>Campañas masivas de memes. Colaboraciones con influencers. Conciencia global del Sahur. <strong>Propuesta de reducción de comisión</strong> a la comunidad.</p>
+      </div>
+      <div class="rm-phase">
+        <div class="rm-status soon">○ Fase 4 — Próximamente</div>
+        <h4>Listados en Exchanges</h4>
+        <p>Listados en CEX y DEX. Liquidez mejorada. Visibilidad institucional. <strong>Reducción de comisión al 3% ejecutada.</strong></p>
+      </div>
+      <div class="rm-phase">
+        <div class="rm-status soon">○ Fase 5 — Próximamente</div>
+        <h4>Expansión Falco-X y Cross-Chain</h4>
+        <p>Integración profunda del ecosistema. Expansión cross-chain. Dominación global del movimiento Sahur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">9</span> Seguridad y Transparencia</h2>
+    <p>
+      TUNG está diseñado con la <strong>seguridad del inversor</strong> como principio fundamental:
+    </p>
+    <ul style="margin: 0 0 16px 20px; color: var(--text);">
+      <li style="margin-bottom: 8px;"><strong>51% LP Bloqueado</strong> — La mayor parte de la liquidez está bloqueada, previniendo rug pulls.</li>
+      <li style="margin-bottom: 8px;"><strong>Verificación On-Chain</strong> — Cada transacción, quema y distribución es visible en BSCScan.</li>
+      <li style="margin-bottom: 8px;"><strong>Infraestructura Falco-X</strong> — Construido sobre infraestructura de swap auditada y probada en batalla.</li>
+      <li style="margin-bottom: 8px;"><strong>Sin Función Mint</strong> — El suministro del token es fijo. Nunca se pueden crear nuevos tokens.</li>
+      <li style="margin-bottom: 8px;"><strong>Camino a Gobernanza Comunitaria</strong> — Planes futuros incluyen votación comunitaria en decisiones clave (tasa de comisión, uso de fondos de marketing).</li>
+      <li style="margin-bottom: 8px;"><strong>Verificación de Bloqueo PinkSale</strong> — Los tokens de desarrollo están bloqueados y son verificables en PinkSale:
+        <a href="https://www.pinksale.finance/pinklock/bsc/record/1626870" target="_blank" rel="noopener" style="color:var(--green);">Bloqueo #1</a> y
+        <a href="https://www.pinksale.finance/pinklock/bsc/record/1626872" target="_blank" rel="noopener" style="color:var(--green);">Bloqueo #2</a>.
+        Si los fees cubren los costos, los tokens bloqueados se redirigen para mejorar el APR del staking y quemas — nunca se venden.</li>
+      <li style="margin-bottom: 8px;"><strong>Extensión de Bloqueos</strong> — Los períodos de bloqueo se pueden extender en cualquier momento para brindar garantías de seguridad adicionales a la comunidad. Nada se toca sin un claro beneficio comunitario.</li>
+    </ul>
+  </section>
+
+  <section id="how-to-buy">
+    <h2><span class="num">10</span> Cómo Comprar TUNG</h2>
+    <ol style="margin: 0 0 16px 20px; color: var(--text);">
+      <li style="margin-bottom: 10px;"><strong>Consigue una billetera BNB Chain</strong> — MetaMask o Trust Wallet recomendados.</li>
+      <li style="margin-bottom: 10px;"><strong>Adquiere BNB</strong> — Compra BNB en Binance, Coinbase o cualquier exchange importante. Transfiere a tu billetera en red BSC.</li>
+      <li style="margin-bottom: 10px;"><strong>Conéctate a Falco-X Swap</strong> — Visita <a href="https://swap.falcox.net/" target="_blank" rel="noopener" style="color:var(--green);font-weight:600;">swap.falcox.net</a> y conecta tu billetera.</li>
+      <li style="margin-bottom: 10px;"><strong>Intercambia BNB por TUNG</strong> — Pega la dirección del contrato de TUNG, configura el slippage al <strong>6-8%</strong> (para cubrir la comisión del 6%), y confirma.</li>
+      <li style="margin-bottom: 10px;"><strong>Hold ea y Gana</strong> — Tu balance de TUNG crece automáticamente con cada transacción en la red. Bienvenido al movimiento Sahur.</li>
+    </ol>
+  </section>
+
+  <section id="disclaimer">
+    <h2><span class="num">11</span> Aviso Legal</h2>
+    <p style="color: var(--text-muted); font-size: 0.9rem;">
+      TUNG es una meme coin creada con fines de <strong>entretenimiento y comunitarios</strong>.
+      Este whitepaper no constituye asesoramiento financiero, recomendación de inversión ni una oferta
+      de valores. Las inversiones en criptomonedas implican un riesgo sustancial, incluyendo la
+      posible pérdida total de tu capital. El rendimiento pasado no garantiza resultados futuros.
+      Siempre realiza tu propia investigación (DYOR) antes de invertir. El Sahur nunca se detiene,
+      pero la volatilidad del mercado tampoco.
+    </p>
+    <p style="color: var(--text-muted); font-size: 0.9rem;">
+      La reducción de comisión del 6% al 3% descrita en este documento es un <strong>objetivo del
+      proyecto</strong> y está sujeta a condiciones de mercado, consenso comunitario y viabilidad
+      técnica. No es una garantía contractual.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 <a href="/">TUNG</a> — La Memecoin del Sahur de Falco-X.</p>
+  <p style="margin-top:6px;">Este whitepaper es solo para fines informativos. No es asesoramiento financiero. Siempre DYOR.</p>
+</footer>
+
+</body>
+</html>
